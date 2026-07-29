@@ -1,133 +1,206 @@
+"use client";
+import { useState } from "react";
+
+const pujaOptions = [
+  "Mangal Dosh Puja",
+  "Kaal Sarp Dosh Puja",
+  "Rudrabhishek",
+  "Mahamrityunjay Jaap",
+  "Navgrah Shanti Puja",
+  "Pitru Dosh Shanti",
+  "Ark Vivah",
+  "Kumbh Vivah",
+  "Narayan Bali",
+  "Nagbali",
+  "Vastu Puja",
+  "Saptashati Path",
+  "Other / Custom",
+];
+
 export default function Contact() {
-    const mapUrl =
-        "https://maps.google.com/?q=17.42041891723927,78.60490037442555";
+  const [form, setForm] = useState({ name: "", phone: "", email: "", puja: "", date: "", message: "" });
 
-    return (
-        <section id="contact" className="py-16 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-6">
-                {/* Heading */}
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-gray-900">
-                        Contact Us
-                    </h2>
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-                    <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-                        Get in touch with Sree Fire Services for Fire NOC Processing,
-                        Fire Safety Consultancy, Fire Alarm Systems, Fire Hydrant Systems,
-                        Pump Room Systems and Fire Protection Solutions.
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const msg = `🙏 *New Puja Booking Request*\n\n*Name:* ${form.name}\n*Phone:* ${form.phone}\n*Email:* ${form.email || "—"}\n*Puja:* ${form.puja}\n*Preferred Date:* ${form.date || "—"}\n*Message:* ${form.message || "—"}`;
+    window.open(`https://wa.me/918085039147?text=${encodeURIComponent(msg)}`, "_blank");
+  };
+
+  const inputCls = "w-full border border-amber-200 rounded-xl px-4 py-3 text-stone-700 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400 bg-amber-50/30 placeholder-stone-400";
+
+  return (
+    <section id="contact" className="py-20 bg-amber-50/40">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <span className="section-badge">Contact Us</span>
+          <div className="temple-divider mt-3" />
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mt-4">
+            Mangalnath Temple, <span className="text-amber-600">Ujjain</span>
+          </h2>
+          <p className="text-stone-500 mt-3">
+            Connect with us to book your pooja or ask any questions.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {/* Left — Contact Info */}
+          <div className="space-y-5">
+            {/* Info Card */}
+            <div className="bg-white rounded-2xl border border-amber-100 shadow-md p-5">
+              <h3 className="font-bold text-stone-800 text-lg mb-4 flex items-center gap-2">
+                <span className="text-2xl">📍</span> Contact Info
+              </h3>
+              <div className="space-y-4 text-sm">
+                <div className="flex gap-3">
+                  <span className="text-amber-600 text-lg mt-0.5">📍</span>
+                  <div>
+                    <p className="font-semibold text-stone-700">Location</p>
+                    <p className="text-stone-500 leading-relaxed">
+                      Ankpat Marg, Hari Nagar<br />
+                      Gayatri Shakti Peeth,<br />
+                      Ujjain (M.P.) — 456006
                     </p>
+                  </div>
                 </div>
-
-                <div className="grid md:grid-cols-2 gap-10">
-                    {/* Contact Card */}
-                    <div className="bg-white p-8 rounded-2xl shadow-lg">
-                        <h3 className="text-2xl font-bold text-red-600 mb-6">
-                            SREE FIRE SERVICES
-                        </h3>
-
-                        <div className="space-y-5">
-                            <div>
-                                <p className="font-semibold text-gray-700">Mobile</p>
-                                <a
-                                    href="tel:+919963999977"
-                                    className="text-blue-600 hover:underline"
-                                >
-                                    +91 99639 99977
-                                </a>
-                            </div>
-
-                            <div>
-                                <p className="font-semibold text-gray-700">
-                                    Alternate Mobile
-                                </p>
-                                <a
-                                    href="tel:+917386299296"
-                                    className="text-blue-600 hover:underline"
-                                >
-                                    +91 73862 99296
-                                </a>
-                            </div>
-
-                            <div>
-                                <p className="font-semibold text-gray-700">Email</p>
-                                <a
-                                    href="mailto:sreefireservice@gmail.com"
-                                    className="text-blue-600 hover:underline"
-                                >
-                                    sreefireservice@gmail.com
-                                </a>
-                            </div>
-
-                            <div>
-                                <p className="font-semibold text-gray-700">Address</p>
-
-                                <p className="text-gray-600 leading-7">
-                                    H.No. 4-205,
-                                    <br />
-                                    Road No. 4,
-                                    <br />
-                                    Near Hanuman Temple,
-                                    <br />
-                                    RTC Colony, Chengicherla,
-                                    <br />
-                                    Medipally,
-                                    <br />
-                                    Medchal–Malkajgiri District,
-                                    <br />
-                                    Telangana - 500092,
-                                    <br />
-                                    India
-                                </p>
-                            </div>
-
-                            <div className="flex flex-wrap gap-4 pt-4">
-                                <a
-                                    href={mapUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-red-600 text-white px-5 py-3 rounded-lg hover:bg-red-700 transition"
-                                >
-                                    📍 Open Map
-                                </a>
-
-                                <a
-                                    href="https://wa.me/919963999977"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-green-500 text-white px-5 py-3 rounded-lg hover:bg-green-600 transition"
-                                >
-                                    💬 WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Google Map */}
-                    <div className="rounded-2xl overflow-hidden shadow-lg">
-                        <a
-                            href={mapUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block relative group h-[500px]"
-                        >
-                            <iframe
-                                src="https://maps.google.com/maps?q=17.42041891723927,78.60490037442555&z=17&output=embed"
-                                width="100%"
-                                height="100%"
-                                loading="lazy"
-                                title="Sree Fire Services Location"
-                                className="border-0 w-full h-full pointer-events-none"
-                            />
-
-                            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition duration-300 flex items-center justify-center">
-                                <div className="bg-white/95 px-6 py-3 rounded-lg shadow-lg font-semibold text-gray-800">
-                                    📍 Click to Open in Google Maps
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div className="flex gap-3">
+                  <span className="text-amber-600 text-lg mt-0.5">📞</span>
+                  <div>
+                    <p className="font-semibold text-stone-700">Phone</p>
+                    <a href="tel:+916260552014" className="text-amber-600 font-medium hover:underline">+91 62605-52014</a>
+                  </div>
                 </div>
+                <div className="flex gap-3">
+                  <span className="text-green-600 text-lg mt-0.5">💬</span>
+                  <div>
+                    <p className="font-semibold text-stone-700">WhatsApp</p>
+                    <a href="https://wa.me/918085039147" target="_blank" rel="noopener noreferrer" className="text-green-600 font-medium hover:underline">+91 80850-39147</a>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <span className="text-amber-600 text-lg mt-0.5">✉️</span>
+                  <div>
+                    <p className="font-semibold text-stone-700">Email</p>
+                    <a href="mailto:info@mangalnathmandirujain.com" className="text-amber-600 font-medium hover:underline text-xs">
+                      info@mangalnathmandirujain.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <span className="text-amber-600 text-lg mt-0.5">⏰</span>
+                  <div>
+                    <p className="font-semibold text-stone-700">Temple Hours</p>
+                    <p className="text-stone-500">5:00 AM – 10:00 PM</p>
+                    <p className="text-green-600 text-xs font-medium">Open All Days</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    );
+
+            {/* Quick Buttons */}
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://wa.me/918085039147"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-green-500 text-white font-bold py-3.5 rounded-xl hover:bg-green-600 transition"
+              >
+                💬 Send WhatsApp Message
+              </a>
+              <a
+                href="tel:+916260552014"
+                className="flex items-center justify-center gap-2 bg-amber-600 text-white font-bold py-3.5 rounded-xl hover:bg-amber-700 transition"
+              >
+                📞 Call Now
+              </a>
+            </div>
+          </div>
+
+          {/* Middle — Map */}
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-amber-100 min-h-64 lg:min-h-auto">
+            <iframe
+              src="https://maps.google.com/maps?q=Mangalnath+Temple+Ujjain&z=15&output=embed"
+              width="100%"
+              height="100%"
+              className="w-full h-full min-h-64"
+              style={{ border: 0 }}
+              loading="lazy"
+              title="Mangalnath Temple Location"
+            />
+          </div>
+
+          {/* Right — Form */}
+          <div className="bg-white rounded-2xl border border-amber-100 shadow-md p-6">
+            <h3 className="font-bold text-stone-800 text-lg mb-5 flex items-center gap-2">
+              <span className="text-2xl">🏛️</span> Book Puja
+            </h3>
+            <form onSubmit={handleSubmit} className="space-y-3">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name *"
+                required
+                value={form.name}
+                onChange={handleChange}
+                className={inputCls}
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Mobile Number *"
+                required
+                value={form.phone}
+                onChange={handleChange}
+                className={inputCls}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email (Optional)"
+                value={form.email}
+                onChange={handleChange}
+                className={inputCls}
+              />
+              <select
+                name="puja"
+                required
+                value={form.puja}
+                onChange={handleChange}
+                className={inputCls}
+              >
+                <option value="">Select Puja / Anushthan *</option>
+                {pujaOptions.map((p) => (
+                  <option key={p} value={p}>{p}</option>
+                ))}
+              </select>
+              <input
+                type="date"
+                name="date"
+                value={form.date}
+                onChange={handleChange}
+                className={inputCls}
+              />
+              <textarea
+                name="message"
+                placeholder="Write your message..."
+                rows={3}
+                value={form.message}
+                onChange={handleChange}
+                className={inputCls + " resize-none"}
+              />
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold py-3.5 rounded-xl hover:opacity-90 transition shadow-md shadow-amber-900/20"
+              >
+                📅 Book Now via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

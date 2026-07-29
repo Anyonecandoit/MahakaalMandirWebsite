@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-cream: #FFF8F0;
+  --bg-light: #FFFDF8;
+  --gold: #C9922A;
+  --gold-light: #D4AF37;
+  --gold-dark: #8B6914;
+  --saffron: #E8700A;
+  --saffron-light: #FF8C42;
+  --brown-dark: #2C1810;
+  --brown-mid: #5C3317;
+  --text-dark: #1A0A00;
+  --border-gold: rgba(201, 146, 42, 0.3);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg-cream);
+  --color-foreground: var(--text-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg-cream);
+  color: var(--text-dark);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Temple divider ornament */
+.temple-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 8px auto;
+}
+
+.temple-divider::before,
+.temple-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to right, transparent, #C9922A);
+}
+
+.temple-divider::after {
+  background: linear-gradient(to left, transparent, #C9922A);
+}
+
+/* Gold gradient text */
+.gold-text {
+  background: linear-gradient(135deg, #C9922A, #F5D06E, #C9922A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Saffron gradient */
+.saffron-gradient {
+  background: linear-gradient(135deg, #E8700A, #FF8C42);
+}
+
+/* Gold gradient bg */
+.gold-gradient {
+  background: linear-gradient(135deg, #C9922A, #D4AF37);
+}
+
+/* Temple card */
+.temple-card {
+  background: white;
+  border: 1px solid rgba(201, 146, 42, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(201, 146, 42, 0.08);
+  transition: all 0.3s ease;
+}
+
+.temple-card:hover {
+  box-shadow: 0 12px 40px rgba(201, 146, 42, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Section badge */
+.section-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(232, 112, 10, 0.1), rgba(201, 146, 42, 0.1));
+  border: 1px solid rgba(201, 146, 42, 0.3);
+  color: #C9922A;
+  padding: 4px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Scroll hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

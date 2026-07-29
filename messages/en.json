@@ -1,0 +1,408 @@
+{
+  "site": {
+    "name": "Mahakal Pooja Services",
+    "subtitle": "Authentic Temple Poojas in Ujjain",
+    "tagline": "Jay Shree Mahakal"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "poojas": "Temple Poojas",
+    "packages": "Packages",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookNow": "Book Puja",
+    "call": "Call Now",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "badge": "Jay Mahakal Bhagwan",
+    "heading": "Book Authentic Mahakal & Mangalnath Temple Poojas Online",
+    "subheading": "Performed by experienced Vedic Pandits in Ujjain. Genuine rituals, transparent pricing, and divine blessings for you and your family.",
+    "btn_book": "Book Puja Now",
+    "btn_call": "Call Pandit",
+    "btn_whatsapp": "WhatsApp Us",
+    "stat1_num": "3000+",
+    "stat1_label": "Ancient Temple",
+    "stat2_num": "Mangal Grah",
+    "stat2_label": "Birthplace",
+    "stat3_num": "5000+",
+    "stat3_label": "Happy Devotees"
+  },
+  "about": {
+    "badge": "About Us",
+    "heading": "Mangalnath Temple, Ujjain",
+    "description": "Mangalnath Temple is one of the most sacred temples in Ujjain, believed to be the birthplace of Mangal Grah (Mars). Situated on the banks of the holy Shipra river, this ancient temple attracts thousands of devotees seeking relief from Mangal Dosha and other planetary afflictions.",
+    "pandit_name": "Pt. Abhishek Vyas",
+    "pandit_title": "Teerth Purohit of Shri Kshetra Avitikpuri (Bhaneja)",
+    "why_heading": "Why Choose Us?",
+    "features": [
+      {
+        "icon": "🕉️",
+        "title": "Certified Pandits",
+        "desc": "Experienced Vedic Pandits with deep knowledge of authentic rituals"
+      },
+      {
+        "icon": "📿",
+        "title": "Authentic Rituals",
+        "desc": "All poojas performed with traditional Vedic methods and genuine samagri"
+      },
+      {
+        "icon": "💰",
+        "title": "Transparent Pricing",
+        "desc": "No hidden charges. Clear pricing for all poojas and packages"
+      },
+      {
+        "icon": "🙏",
+        "title": "Personal Guidance",
+        "desc": "One-on-one guidance from our Pandits throughout the pooja process"
+      },
+      {
+        "icon": "📱",
+        "title": "Live Updates",
+        "desc": "Receive photos and videos of the pooja performed on your behalf"
+      },
+      {
+        "icon": "🏛️",
+        "title": "Temple Authorized",
+        "desc": "Authorized Teerth Purohit of Mangalnath & Mahakal Temple, Ujjain"
+      }
+    ]
+  },
+  "poojas": {
+    "badge": "Our Services",
+    "heading": "Pooja & Anushthan",
+    "subheading": "Perform diverse and scripturally authentic Vedic poojas at Mangalnath Temple.",
+    "btn_details": "View Details",
+    "btn_book": "Book Now",
+    "btn_all": "View All Services",
+    "items": [
+      {
+        "name": "Mangal Dosh Puja",
+        "duration": "2–3 Hours",
+        "price": "₹2,100",
+        "desc": "Special puja to remove Mangal Dosha. Specific Vedic puja and anushthaan."
+      },
+      {
+        "name": "Kaal Sarp Dosh Puja",
+        "duration": "3–4 Hours",
+        "price": "₹3,100",
+        "desc": "Specific Vedic puja to remove Kaal Sarp Dosha."
+      },
+      {
+        "name": "Rudrabhishek",
+        "duration": "2 Hours",
+        "price": "₹1,500",
+        "desc": "Abhishek of Shiva with various sacred ingredients for blessings and protection."
+      },
+      {
+        "name": "Mahamrityunjay Jaap",
+        "duration": "3 Hours",
+        "price": "₹2,500",
+        "desc": "Powerful chanting for health, longevity, and protection from untimely death."
+      },
+      {
+        "name": "Navgrah Shanti Puja",
+        "duration": "3–4 Hours",
+        "price": "₹3,500",
+        "desc": "Vedic puja to pacify all nine planets and bring harmony and peace."
+      },
+      {
+        "name": "Pitru Dosh Shanti",
+        "duration": "3 Hours",
+        "price": "₹2,500",
+        "desc": "Puja to relieve Pitru Dosha and offer peace to ancestors."
+      },
+      {
+        "name": "Ark Vivah",
+        "duration": "2–3 Hours",
+        "price": "₹2,100",
+        "desc": "Sacred ritual for Manglik persons before marriage for auspiciousness."
+      },
+      {
+        "name": "Kumbh Vivah",
+        "duration": "2–3 Hours",
+        "price": "₹2,100",
+        "desc": "Vedic ritual for Manglik persons to reduce the effect of Mangal Dosha."
+      },
+      {
+        "name": "Narayan Bali",
+        "duration": "4–5 Hours",
+        "price": "₹5,100",
+        "desc": "Important ritual for ancestors' peace and moksha."
+      },
+      {
+        "name": "Nagbali",
+        "duration": "4–5 Hours",
+        "price": "₹5,100",
+        "desc": "Puja to seek forgiveness from the Nag Dev and remove related doshas."
+      },
+      {
+        "name": "Vastu Puja",
+        "duration": "2 Hours",
+        "price": "₹1,500",
+        "desc": "Puja for harmony and positive energy in your home or office."
+      },
+      {
+        "name": "Saptashati Path",
+        "duration": "3–4 Hours",
+        "price": "₹3,100",
+        "desc": "Sacred reading of Durga Saptashati for protection and blessings of Devi."
+      }
+    ]
+  },
+  "packages": {
+    "badge": "Packages",
+    "heading": "Choose Your Package",
+    "subheading": "Transparent, all-inclusive packages for a hassle-free pooja experience.",
+    "popular": "Most Popular",
+    "btn": "Book This Package",
+    "items": [
+      {
+        "name": "Basic",
+        "price": "₹1,100",
+        "desc": "Essential pooja with experienced Pandit",
+        "features": [
+          "Experienced Pandit",
+          "Basic Samagri Included",
+          "Prasad Distribution",
+          "Pooja Confirmation",
+          "WhatsApp Support"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "₹3,100",
+        "desc": "Complete pooja with photos & certificate",
+        "features": [
+          "Senior Pandit",
+          "Premium Samagri",
+          "Prasad & Flowers",
+          "Pooja Photos",
+          "Temple Certificate",
+          "Video Call Option",
+          "WhatsApp Support"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "₹5,100",
+        "desc": "Full VIP experience with live video",
+        "features": [
+          "Chief Pandit",
+          "Premium Samagri & Flowers",
+          "Special Prasad & Gifts",
+          "HD Video of Pooja",
+          "Temple Certificate",
+          "Live Video Call",
+          "Priority WhatsApp",
+          "Personal Guidance",
+          "Follow-up Consultation"
+        ]
+      }
+    ]
+  },
+  "whyus": {
+    "badge": "Why Choose Us",
+    "heading": "Trusted by Thousands of Devotees",
+    "subheading": "We bring the divine blessings of Ujjain's sacred temples to your doorstep.",
+    "items": [
+      { "num": "5000+", "label": "Successful Poojas" },
+      { "num": "15+", "label": "Years Experience" },
+      { "num": "50+", "label": "Expert Pandits" },
+      { "num": "100%", "label": "Authentic Rituals" },
+      { "num": "24/7", "label": "WhatsApp Support" },
+      { "num": "98%", "label": "Satisfied Devotees" }
+    ]
+  },
+  "process": {
+    "badge": "Booking Process",
+    "heading": "How It Works",
+    "subheading": "Simple 6-step process to book your pooja from anywhere in the world.",
+    "steps": [
+      { "num": "01", "title": "Choose Puja", "desc": "Select the pooja you want performed from our list." },
+      { "num": "02", "title": "Submit Details", "desc": "Share your name, gotra, birth details, and requirements." },
+      { "num": "03", "title": "Confirm Booking", "desc": "Make payment and receive booking confirmation." },
+      { "num": "04", "title": "Pandit Assigned", "desc": "An experienced Pandit is assigned specifically for you." },
+      { "num": "05", "title": "Perform Puja", "desc": "Pooja is performed with full Vedic rituals at the temple." },
+      { "num": "06", "title": "Receive Media", "desc": "Get photos, videos, and prasad delivered to your door." }
+    ]
+  },
+  "gallery": {
+    "badge": "Gallery",
+    "heading": "Mangalnath Temple, Ujjain",
+    "subheading": "Glimpses of our sacred poojas and the divine Mangalnath Temple.",
+    "tabs": ["Temple", "Puja & Anushthan", "Aarti", "Devotees"],
+    "btn_more": "View More"
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "heading": "What Devotees Say",
+    "subheading": "Real experiences from thousands of satisfied devotees across India and abroad.",
+    "items": [
+      {
+        "name": "Rajesh Sharma",
+        "city": "Delhi",
+        "rating": 5,
+        "text": "Excellent service! Pandit Abhishek performed our Mangal Dosh Puja with great devotion. We received all photos and videos on the same day. Highly recommended!"
+      },
+      {
+        "name": "Priya Patel",
+        "city": "Mumbai",
+        "rating": 5,
+        "text": "We booked Kaal Sarp Dosh Puja for my husband. The experience was divine. Panditji explained every step on video call. Very professional and genuine service."
+      },
+      {
+        "name": "Suresh Gupta",
+        "city": "Indore",
+        "rating": 5,
+        "text": "Best pooja service in Ujjain. Very transparent pricing and authentic rituals. Got the temple certificate too. Will definitely book again for Navgrah Shanti."
+      },
+      {
+        "name": "Anita Singh",
+        "city": "Bangalore",
+        "rating": 5,
+        "text": "Booked Narayan Bali for my late father. The entire process was very smooth and devotional. Panditji was very kind and knowledgeable. Grateful for this service."
+      },
+      {
+        "name": "Vikram Joshi",
+        "city": "Pune",
+        "rating": 5,
+        "text": "Amazing experience! The Rudrabhishek was performed beautifully. We joined on live video call from Pune. Felt like we were physically present at the temple."
+      },
+      {
+        "name": "Meena Agarwal",
+        "city": "Jaipur",
+        "rating": 5,
+        "text": "Very genuine and authentic service. Ark Vivah was performed perfectly. Pandit Abhishek is very experienced and explained everything in detail. Highly satisfied."
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "heading": "Frequently Asked Questions",
+    "subheading": "Everything you need to know about our pooja services.",
+    "items": [
+      {
+        "q": "How can I book a pooja?",
+        "a": "You can book a pooja by calling us at +91 62605-52014 or messaging us on WhatsApp at +91 80850-39147. You can also fill the contact form on this website."
+      },
+      {
+        "q": "Do I need to be physically present for the pooja?",
+        "a": "No, you don't need to be physically present. Our Pandits perform the pooja on your behalf at the temple. You can join live on video call if you wish."
+      },
+      {
+        "q": "What information do I need to provide?",
+        "a": "You will need to provide your full name, father's name, gotra, date of birth, city of residence, and specific intentions for the pooja."
+      },
+      {
+        "q": "Will I get photos and videos?",
+        "a": "Yes, we provide photos and videos of the entire pooja. In Premium packages, you also get HD video recording and live video call access."
+      },
+      {
+        "q": "Is the prasad delivered to my home?",
+        "a": "Yes, prasad is delivered to your home address in Premium and Standard packages. Basic package includes prasad distribution at the temple."
+      },
+      {
+        "q": "What is included in the samagri?",
+        "a": "All authentic samagri required for the specific pooja is included in our packages. We use only genuine materials as per Vedic traditions."
+      },
+      {
+        "q": "Can I book for someone else?",
+        "a": "Yes, you can book a pooja on behalf of a family member. Just provide their details (name, gotra, etc.) during booking."
+      },
+      {
+        "q": "What is the advance payment required?",
+        "a": "We require 50% advance payment at the time of booking. The remaining amount is to be paid before the pooja begins."
+      },
+      {
+        "q": "How do I make payment?",
+        "a": "We accept UPI, bank transfer, and cash. Our WhatsApp number is also our UPI ID for easy payment."
+      },
+      {
+        "q": "Is there a refund policy?",
+        "a": "If you cancel at least 48 hours before the scheduled pooja, you will receive a full refund. Cancellations within 48 hours attract a 25% cancellation fee."
+      },
+      {
+        "q": "What poojas can be done for Mangal Dosha?",
+        "a": "Mangal Dosh Puja, Ark Vivah, and Kumbh Vivah are specifically recommended for Mangal Dosha. Our Pandit will guide you to the most suitable one."
+      },
+      {
+        "q": "Can I get a temple certificate?",
+        "a": "Yes, temple certificates are provided in Standard and Premium packages as proof of the pooja performed."
+      },
+      {
+        "q": "Do you provide services outside Ujjain?",
+        "a": "Our poojas are performed at the Mangalnath and Mahakal temples in Ujjain. Devotees from anywhere in India or abroad can book online."
+      },
+      {
+        "q": "How long does a typical pooja take?",
+        "a": "Duration varies by pooja type — simple poojas take 1–2 hours, while elaborate anushthaans can take 4–6 hours."
+      },
+      {
+        "q": "Are the Pandits certified?",
+        "a": "Yes, our Pandits are certified and experienced Vedic scholars. Pt. Abhishek Vyas is an authorized Teerth Purohit of Mangalnath Temple, Ujjain."
+      },
+      {
+        "q": "What is Kaal Sarp Dosh Puja?",
+        "a": "Kaal Sarp Dosh occurs when all seven planets are between Rahu and Ketu. This puja at Mangalnath Temple is highly effective for removing this dosha."
+      },
+      {
+        "q": "Can I request a specific date for the pooja?",
+        "a": "Yes, we try our best to accommodate your preferred date. However, some poojas are best performed on specific auspicious dates (muhurta). Our Pandit will advise."
+      },
+      {
+        "q": "What is Narayan Bali?",
+        "a": "Narayan Bali is an important ritual for the peace and moksha of ancestors. It is performed to relieve Pitru Dosha and bring peace to the departed souls."
+      },
+      {
+        "q": "Is Mangalnath Temple open all year?",
+        "a": "Yes, Mangalnath Temple is open all days from 5:00 AM to 10:00 PM throughout the year, including holidays."
+      },
+      {
+        "q": "How do I know the pooja was performed for me?",
+        "a": "We provide full documentation including photos, videos, and a temple certificate. You can also join the pooja live on a video call."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "heading": "Mangalnath Temple, Ujjain",
+    "subheading": "Connect with us to book your pooja or ask any questions.",
+    "form_heading": "Book Puja",
+    "label_name": "Your Name",
+    "label_phone": "Mobile Number",
+    "label_email": "Email (Optional)",
+    "label_puja": "Puja / Anushthan",
+    "label_date": "Preferred Date",
+    "label_msg": "Write your message",
+    "btn_submit": "Book Now",
+    "placeholder_puja": "Select a Puja",
+    "info_location": "Location",
+    "info_address": "Ankpat Marg, Hari Nagar Gayatri Shakti Peeth, Ujjain (M.P.) 456006",
+    "info_phone": "Phone",
+    "info_whatsapp": "WhatsApp",
+    "info_email": "Email",
+    "info_hours": "Temple Hours",
+    "info_hours_val": "5:00 AM to 10:00 PM (All Days Open)",
+    "btn_whatsapp": "Send WhatsApp Message",
+    "btn_call": "Call Now"
+  },
+  "footer": {
+    "tagline": "Authentic Vedic poojas at Mangalnath & Mahakal Temple, Ujjain. Performed by experienced Pandits with divine blessings.",
+    "quick_links": "Quick Links",
+    "poojas": "Temple Poojas",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "refund": "Refund Policy",
+    "terms": "Terms & Conditions",
+    "follow": "Follow Us",
+    "copyright": "© 2026 Mahakal Pooja Services. All Rights Reserved.",
+    "made_with": "Made with ❤️ for devotees worldwide"
+  },
+  "whatsapp": {
+    "label": "WhatsApp"
+  }
+}
