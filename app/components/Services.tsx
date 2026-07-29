@@ -31,7 +31,7 @@ const poojas = [
         hindi: "महामृत्युंजय जाप",
         duration: "6 Hours",
         price: "₹35,000",
-        desc: "Powerful chanting for health, longevity and protection from untimely death.",
+        desc: "Powerful chanting for health, longevity and protection from untimely death..",
     },
     {
         icon: "⭐",
