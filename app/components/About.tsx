@@ -116,7 +116,7 @@ export default function About() {
                     visible: { opacity: 1, y: 0 },
                   }}
               >
-                <div className="w-16 h-16 rounded-full bg-amber-100 border-2 border-amber-300 flex items-center justify-center text-3xl">
+                <div className="w-16 h-16 rounded-full bg-amber-100 border-2 border-amber-300 flex items-center justify-center text-3xl shrink-0">
                   🙏
                 </div>
 
@@ -125,11 +125,11 @@ export default function About() {
                     Acharya Pt. Abhishek Vyas
                   </p>
 
-                  <p className="text-amber-700 text-sm font-medium">
-                    Teerth Purohit, Mangalnath Temple (Ujjain)
+                  <p className="text-amber-700 text-sm md:text-base font-semibold mt-0.5">
+                    अवंतिका तीर्थ पुरोहित के भानेज
                   </p>
 
-                  <p className="text-stone-500 text-xs mt-1">
+                  <p className="text-stone-500 text-xs mt-1 leading-relaxed">
                     15+ years of experience in Kaal Sarp Dosh Puja, Mangal Dosh
                     Shanti, Narayan Bali, Mahamrityunjay Jaap, Rudrabhishek, and
                     Navgrah Shanti.

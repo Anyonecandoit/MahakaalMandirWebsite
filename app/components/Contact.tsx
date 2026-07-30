@@ -116,10 +116,10 @@ export default function Contact() {
                     <div>
                       <p className="font-semibold text-stone-700">Email</p>
                       <a
-                          href="mailto:info@mangalnathmandirujain.com"
+                          href="mailto:abhishekvyas069@gmail.com"
                           className="text-amber-600 font-medium hover:underline text-xs"
                       >
-                        info@mangalnathmandirujain.com
+                        abhishekvyas069@gmail.com
                       </a>
                     </div>
                   </div>
