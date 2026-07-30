@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 const poojas = [
     {
         icon: "🔱",
@@ -83,7 +85,7 @@ const poojas = [
         name: "Durga Saptashati Path",
         duration: "2–3 Hours",
         price: "₹3,100",
-        desc: "Recitation of Durga Saptashati for divine protection, शक्ति, and blessings of Maa Durga.",
+        desc: "Recitation of Durga Saptashati for divine protection and blessings of Maa Durga.",
     },
 ];
 
@@ -93,7 +95,13 @@ export default function Services() {
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Heading */}
-                <div className="text-center mb-14">
+                <motion.div
+                    className="text-center mb-14"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                >
                     <h2 className="text-4xl font-bold text-orange-900">
                         Our Puja Services in Ujjain
                     </h2>
@@ -102,16 +110,42 @@ export default function Services() {
                         Authentic Vedic pujas performed at Mangalnath & Mahakal Temple by experienced pandits.
                         All rituals are conducted individually with proper विधि and complete samagri.
                     </p>
-                </div>
+                </motion.div>
 
                 {/* Cards */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <motion.div
+                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={{
+                        hidden: {},
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.2,
+                            },
+                        },
+                    }}
+                >
                     {poojas.map((pooja) => (
-                        <div
+                        <motion.div
                             key={pooja.name}
-                            className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300"
+                            whileHover={{ y: -10, scale: 1.03 }}
+                            className="bg-white rounded-2xl shadow-lg p-6 transition duration-300 hover:shadow-2xl"
+                            variants={{
+                                hidden: { opacity: 0, y: 40 },
+                                visible: { opacity: 1, y: 0 },
+                            }}
                         >
-                            <div className="text-5xl mb-4">{pooja.icon}</div>
+                            {/* Icon */}
+                            <motion.div
+                                className="text-5xl mb-4"
+                                initial={{ scale: 0 }}
+                                whileInView={{ scale: 1 }}
+                                transition={{ type: "spring", stiffness: 200 }}
+                            >
+                                {pooja.icon}
+                            </motion.div>
 
                             <h3 className="text-xl font-bold text-orange-900">
                                 {pooja.name}
@@ -152,9 +186,9 @@ export default function Services() {
                                     💬 WhatsApp
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
 
             </div>
         </section>
