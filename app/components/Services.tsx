@@ -4,116 +4,107 @@ const poojas = [
     {
         icon: "🔱",
         name: "Mangal Dosh Puja",
-        hindi: "मंगल दोष पूजा",
         duration: "2–3 Hours",
         price: "₹1,100 / ₹2,100 / ₹5,100 / ₹11,000",
-        desc: "Special puja to remove Mangal Dosha with specific Vedic puja and anushthaan.",
+        desc: "Vedic ritual performed at Mangalnath Temple to reduce the negative effects of Mangal Dosha and bring stability in marriage and life.",
     },
     {
         icon: "🐍",
         name: "Kaal Sarp Dosh Puja",
-        hindi: "कालसर्प दोष पूजा",
         duration: "3–4 Hours",
         price: "₹2,100 / ₹3,500",
-        desc: "Powerful Vedic puja to remove Kaal Sarp Dosha and its afflictions.",
+        desc: "Powerful puja to neutralize Kaal Sarp Dosha, remove obstacles, and bring peace, success, and protection.",
     },
     {
         icon: "🕉️",
         name: "Rudrabhishek",
-        hindi: "रुद्राभिषेक",
         duration: "2 Hours",
         price: "₹3,100 / ₹5,100",
-        desc: "Abhishek of Shiva with sacred ingredients for blessings and protection.",
+        desc: "Sacred Abhishek of Lord Shiva with holy ingredients for divine blessings, protection, and spiritual growth.",
     },
     {
         icon: "🪬",
         name: "Mahamrityunjay Jaap",
-        hindi: "महामृत्युंजय जाप",
         duration: "6 Hours",
         price: "₹35,000",
-        desc: "Powerful chanting for health, longevity and protection from untimely death..",
+        desc: "Highly powerful chanting dedicated to Lord Shiva for health, longevity, and protection from negative energies.",
     },
     {
         icon: "⭐",
         name: "Navgrah Shanti Puja",
-        hindi: "नवग्रह शांति पूजा",
         duration: "2–3 Hours",
         price: "₹3,500",
-        desc: "Vedic puja to pacify all nine planets and bring harmony and peace.",
+        desc: "Puja performed to balance all nine planets and remove planetary doshas for a peaceful and successful life.",
     },
     {
         icon: "👴",
         name: "Pitru Dosh Shanti",
-        hindi: "पितृ दोष शांति",
         duration: "3 Hours",
         price: "₹3,100",
-        desc: "Puja to relieve Pitru Dosha and offer peace and moksha to ancestors.",
+        desc: "Ritual performed to satisfy ancestors and remove Pitru Dosha, bringing harmony and blessings in the family.",
     },
     {
         icon: "💍",
         name: "Ark Vivah",
-        hindi: "आर्क विवाह",
         duration: "2–3 Hours",
         price: "₹2,500",
-        desc: "Sacred ritual for Manglik persons before marriage for auspiousness.",
+        desc: "Special ritual for Manglik individuals to reduce Mangal Dosha effects before marriage.",
     },
     {
         icon: "🫧",
         name: "Kumbh Vivah",
-        hindi: "कुम्भ विवाह",
         duration: "2–3 Hours",
         price: "₹2,500",
-        desc: "Vedic ritual for Manglik persons to reduce the effect of Mangal Dosha.",
+        desc: "Traditional Vedic ritual performed to nullify Manglik Dosha and ensure a happy married life.",
     },
     {
         icon: "🙏",
         name: "Narayan Bali",
-        hindi: "नारायणबली",
         duration: "4–5 Hours",
         price: "₹11,000",
-        desc: "Important ritual for peace and moksha of ancestors.",
+        desc: "Important ritual for the salvation of departed souls and removal of ancestral doshas.",
     },
     {
         icon: "🐍",
-        name: "Nagbali",
-        hindi: "नागबली",
+        name: "Nag Bali",
         duration: "4–5 Hours",
         price: "₹11,000",
-        desc: "Puja to seek forgiveness from Nag Dev and remove related doshas.",
+        desc: "Sacred ritual performed to remove sins related to harming serpents and to eliminate Nag Dosha.",
     },
     {
         icon: "🏠",
         name: "Vastu Puja",
-        hindi: "वास्तु पूजा",
         duration: "4 Hours",
         price: "₹7,500",
-        desc: "Puja for harmony and positive energy in your home or office.",
+        desc: "Puja performed to remove Vastu defects and bring positive energy, prosperity, and harmony in home or office.",
     },
     {
         icon: "📿",
-        name: "Saptashati Path",
-        hindi: "सप्तशती पाठ",
+        name: "Durga Saptashati Path",
         duration: "2–3 Hours",
         price: "₹3,100",
-        desc: "Sacred reading of Durga Saptashati for Devi's protection and blessings.",
+        desc: "Recitation of Durga Saptashati for divine protection, शक्ति, and blessings of Maa Durga.",
     },
 ];
 
 export default function Services() {
     return (
-        <section id="services" className="py-20 bg-orange-50">
+        <section id="poojas" className="py-20 bg-orange-50">
             <div className="max-w-7xl mx-auto px-6">
+
+                {/* Heading */}
                 <div className="text-center mb-14">
                     <h2 className="text-4xl font-bold text-orange-900">
-                        Our Pooja Services
+                        Our Puja Services in Ujjain
                     </h2>
 
                     <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-                        Traditional Vedic Poojas performed by experienced priests at
-                        Mahakaal Mangalnath Temple, Ujjain.
+                        Authentic Vedic pujas performed at Mangalnath & Mahakal Temple by experienced pandits.
+                        All rituals are conducted individually with proper विधि and complete samagri.
                     </p>
                 </div>
 
+                {/* Cards */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {poojas.map((pooja) => (
                         <div
@@ -126,11 +117,7 @@ export default function Services() {
                                 {pooja.name}
                             </h3>
 
-                            <p className="text-orange-600 font-medium mt-1">
-                                {pooja.hindi}
-                            </p>
-
-                            <div className="mt-4 space-y-2 text-gray-700">
+                            <div className="mt-4 space-y-2 text-gray-700 text-sm">
                                 <p>
                                     <strong>Duration:</strong> {pooja.duration}
                                 </p>
@@ -143,16 +130,32 @@ export default function Services() {
                                 </p>
                             </div>
 
-                            <p className="mt-4 text-gray-600">
+                            <p className="mt-4 text-gray-600 text-sm leading-relaxed">
                                 {pooja.desc}
                             </p>
 
-                            <button className="mt-6 w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-xl font-semibold transition">
-                                Book Now
-                            </button>
+                            {/* CTA */}
+                            <div className="mt-6 flex gap-3">
+                                <a
+                                    href="tel:+916260552014"
+                                    className="w-1/2 text-center bg-orange-600 hover:bg-orange-700 text-white py-2 rounded-lg text-sm font-semibold transition"
+                                >
+                                    📞 Call
+                                </a>
+
+                                <a
+                                    href="https://wa.me/916260552014"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-1/2 text-center bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg text-sm font-semibold transition"
+                                >
+                                    💬 WhatsApp
+                                </a>
+                            </div>
                         </div>
                     ))}
                 </div>
+
             </div>
         </section>
     );
