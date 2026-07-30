@@ -5,7 +5,7 @@ import Image from "next/image";
 const tabs = ["All", "Temple", "Devotees", "Puja"];
 
 const images = [
-  { src: "/temple-gate.jpg", alt: "Mangalnath Temple Gate, Ujjain", tab: "Temple", size: "tall" },
+  { src: "/homepageimage.png", alt: "Mangalnath Temple Gate, Ujjain", tab: "Temple", size: "tall" },
   { src: "/shivling.jpg", alt: "Mangalnath Shivling with Flowers", tab: "Temple", size: "normal" },
   { src: "/gallery-1.jpg", alt: "Pandit with Devotee — Certificate Ceremony", tab: "Devotees", size: "normal" },
   { src: "/gallery-2.jpg", alt: "Pandit with Devotee — Puja Certificate", tab: "Devotees", size: "normal" },

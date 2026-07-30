@@ -4,10 +4,11 @@ import Image from "next/image";
 export default function Hero() {
   return (
       <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-              src="/temple-gate.jpg"
+              src="/homepageimage.png"
               alt="Mahakal and Mangalnath Temple, Ujjain"
               fill
               className="object-cover object-center"
@@ -49,27 +50,28 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-32 pt-36">
           <div className="max-w-2xl">
+
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/40 text-amber-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
               <span>🕉️</span>
               <span>Sacred Rituals at Mahakal & Mangalnath</span>
             </div>
 
-            {/* Heading */}
+            {/* ✅ UPDATED HEADING */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
               Authentic{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">
-              Kaal Sarp & Mangal Dosh Puja
+              Vedic Pujas
             </span>{" "}
               in Ujjain
             </h1>
 
-            {/* Description */}
+            {/* ✅ UPDATED DESCRIPTION */}
             <p className="text-white/80 text-lg mb-8 leading-relaxed">
-              Book powerful Vedic pujas at Mangalnath and Mahakal Temple in Ujjain.
-              We perform Kaal Sarp Dosh Puja, Mangal Dosh Shanti, Pitru Dosh rituals,
-              and other sacred anushthans with proper Vedic procedures to remove
-              obstacles, improve relationships, and bring peace and prosperity.
+              Book authentic Vedic pujas at Mangalnath and Mahakal Temple in Ujjain.
+              We perform Kaal Sarp Dosh Puja, Mangal Dosh Shanti, Pitru Dosh Puja,
+              Navgrah Shanti, Rudrabhishek, and many other sacred rituals with proper
+              विधि and complete samagri for peace, prosperity, and spiritual growth.
             </p>
 
             {/* Buttons */}
@@ -114,6 +116,7 @@ export default function Hero() {
                   </div>
               ))}
             </div>
+
           </div>
         </div>
 
@@ -124,6 +127,7 @@ export default function Hero() {
             <div className="w-1 h-2 bg-amber-400 rounded-full animate-bounce" />
           </div>
         </div>
+
       </section>
   );
 }

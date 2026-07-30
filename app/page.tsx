@@ -13,21 +13,21 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Packages />
-      <WhyChooseUs />
-      <Process />
-      <Projects />
-      <Testimonials />
-      <FAQ />
-      <Contact />
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <Hero />
+            <About />
+            <Services />
+            <Packages />
+            <WhyChooseUs />
+            <Process />
+            <Projects />
+            <Testimonials />
+            <FAQ />
+            <Contact />
+            <Footer />
+            <WhatsAppButton />
+        </>
+    );
 }
