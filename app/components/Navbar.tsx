@@ -37,21 +37,21 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-2 lg:gap-3 min-w-fit">
+        <div className="flex items-center gap-2 lg:gap-3 min-w-0 shrink-0">
           <a href="#home" className="flex items-center gap-2 lg:gap-3 shrink-0">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 border-2 border-amber-400 shadow-md flex items-center justify-center text-2xl flex-shrink-0">
               🕉️
             </div>
-            <div className="leading-tight whitespace-nowrap">
+            <div className="leading-tight whitespace-nowrap overflow-hidden">
               <p
-                className={`font-bold text-base leading-tight whitespace-nowrap ${
+                className={`font-bold text-base leading-tight whitespace-nowrap truncate ${
                   scrolled ? "text-amber-800" : "text-white"
                 }`}
               >
                 {site.name || "Mahakal Pooja Services"}
               </p>
               <p
-                className={`text-xs font-medium whitespace-nowrap ${
+                className={`text-xs font-medium whitespace-nowrap truncate ${
                   scrolled ? "text-amber-600" : "text-amber-200"
                 }`}
               >
@@ -115,7 +115,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`lg:hidden p-2 rounded-lg ${
+          className={`lg:hidden p-2 rounded-lg shrink-0 ml-2 ${
             scrolled ? "text-amber-800" : "text-white"
           }`}
           aria-label={nav.menu || "Menu"}
