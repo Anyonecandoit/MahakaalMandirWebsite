@@ -37,21 +37,21 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-3 lg:flex-1">
-          <a href="#home" className="flex items-center gap-3">
+        <div className="flex items-center gap-2 lg:gap-3 min-w-fit">
+          <a href="#home" className="flex items-center gap-2 lg:gap-3 shrink-0">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 border-2 border-amber-400 shadow-md flex items-center justify-center text-2xl flex-shrink-0">
               🕉️
             </div>
-            <div className="leading-tight">
+            <div className="leading-tight whitespace-nowrap">
               <p
-                className={`font-bold text-base leading-tight ${
+                className={`font-bold text-base leading-tight whitespace-nowrap ${
                   scrolled ? "text-amber-800" : "text-white"
                 }`}
               >
                 {site.name || "Mahakal Pooja Services"}
               </p>
               <p
-                className={`text-xs font-medium ${
+                className={`text-xs font-medium whitespace-nowrap ${
                   scrolled ? "text-amber-600" : "text-amber-200"
                 }`}
               >
@@ -60,10 +60,12 @@ export default function Navbar() {
             </div>
           </a>
 
-          <LanguageSwitcher />
+          <div className="shrink-0">
+            <LanguageSwitcher />
+          </div>
         </div>
 
-        <div className="hidden lg:flex lg:flex-[2] items-center justify-center gap-8">
+        <div className="hidden lg:flex lg:flex-1 items-center justify-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.href}
