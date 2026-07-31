@@ -37,7 +37,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 lg:flex-1">
           <a href="#home" className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 border-2 border-amber-400 shadow-md flex items-center justify-center text-2xl flex-shrink-0">
               🕉️
@@ -63,7 +63,7 @@ export default function Navbar() {
           <LanguageSwitcher />
         </div>
 
-        <div className="hidden lg:flex flex-1 items-center justify-center gap-8">
+        <div className="hidden lg:flex lg:flex-[2] items-center justify-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -77,7 +77,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-2 lg:flex-1 lg:justify-end">
           <a
             href="tel:+916260552014"
             className={`inline-flex items-center justify-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full whitespace-nowrap transition-all ${
