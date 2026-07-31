@@ -68,7 +68,7 @@ export default function Navbar() {
                 scrolled ? "text-stone-700" : "text-white/90"
               }`}
             >
-              {nav[item.key] || item.key}
+              {nav[item.key as keyof typeof nav] || item.key}
             </a>
           ))}
         </div>
@@ -136,7 +136,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="text-stone-700 font-medium py-2.5 px-3 rounded-lg hover:bg-amber-50 hover:text-amber-700 transition-colors"
               >
-                {nav[item.key] || item.key}
+                {nav[item.key as keyof typeof nav] || item.key}
               </a>
             ))}
             <div className="pt-3 border-t border-amber-100 mt-2">
