@@ -63,12 +63,12 @@ export default function Navbar() {
           <LanguageSwitcher />
         </div>
 
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden lg:flex flex-1 items-center justify-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-amber-500 ${
+              className={`text-sm font-medium whitespace-nowrap transition-colors hover:text-amber-500 ${
                 scrolled ? "text-stone-700" : "text-white/90"
               }`}
             >
