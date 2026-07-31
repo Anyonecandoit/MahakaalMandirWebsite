@@ -18,7 +18,7 @@ const navItems = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const { translations, t } = useLanguage();
+  const { translations } = useLanguage();
   const nav = translations.nav || {};
   const site = translations.site || {};
 
@@ -37,27 +37,31 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 border-2 border-amber-400 shadow-md flex items-center justify-center text-2xl flex-shrink-0">
-            🕉️
-          </div>
-          <div className="leading-tight">
-            <p
-              className={`font-bold text-base leading-tight ${
-                scrolled ? "text-amber-800" : "text-white"
-              }`}
-            >
-              {site.name || "Mahakal Pooja Services"}
-            </p>
-            <p
-              className={`text-xs font-medium ${
-                scrolled ? "text-amber-600" : "text-amber-200"
-              }`}
-            >
-              🕉️ {site.subtitle || "Authentic Poojas • Ujjain"}
-            </p>
-          </div>
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="#home" className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 border-2 border-amber-400 shadow-md flex items-center justify-center text-2xl flex-shrink-0">
+              🕉️
+            </div>
+            <div className="leading-tight">
+              <p
+                className={`font-bold text-base leading-tight ${
+                  scrolled ? "text-amber-800" : "text-white"
+                }`}
+              >
+                {site.name || "Mahakal Pooja Services"}
+              </p>
+              <p
+                className={`text-xs font-medium ${
+                  scrolled ? "text-amber-600" : "text-amber-200"
+                }`}
+              >
+                🕉️ {site.subtitle || "Authentic Poojas • Ujjain"}
+              </p>
+            </div>
+          </a>
+
+          <LanguageSwitcher />
+        </div>
 
         <div className="hidden lg:flex items-center gap-6">
           {navItems.map((item) => (
@@ -74,8 +78,6 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-2">
-          <LanguageSwitcher />
-
           <a
             href="tel:+916260552014"
             className={`flex items-center gap-1.5 text-sm font-semibold px-3 py-2 rounded-lg border transition-all ${
@@ -139,10 +141,7 @@ export default function Navbar() {
                 {nav[item.key as keyof typeof nav] || item.key}
               </a>
             ))}
-            <div className="pt-3 border-t border-amber-100 mt-2">
-              <LanguageSwitcher />
-            </div>
-            <div className="flex gap-2 pt-3 mt-2">
+            <div className="flex gap-2 pt-3 mt-2 border-t border-amber-100">
               <a
                 href="tel:+916260552014"
                 className="flex-1 text-center bg-amber-50 border border-amber-200 text-amber-700 font-semibold py-2.5 rounded-lg text-sm"
